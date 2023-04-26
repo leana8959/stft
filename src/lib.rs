@@ -117,7 +117,7 @@ impl std::fmt::Display for WindowType {
     }
 }
 
-// TODO write a macro that does this automatically for any enum
+// TODO: write a macro that does this automatically for any enum
 static WINDOW_TYPES: [WindowType; 5] = [
     WindowType::Hanning,
     WindowType::Hamming,
@@ -196,7 +196,7 @@ where
         Self::new_with_window_vec_and_zero_padding(window, window_size, fft_size, step_size)
     }
 
-    // TODO this should ideally take an iterator and not a vec
+    // TODO: this should ideally take an iterator and not a vec
     pub fn new_with_window_vec_and_zero_padding(
         window: Option<Vec<T>>,
         window_size: usize,

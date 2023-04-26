@@ -37,7 +37,7 @@ fn test_window_types_to_strings() {
 
 #[test]
 fn test_log10_positive() {
-    assert!(stft::log10_positive(-1. as f64).is_nan());
+    assert!(stft::log10_positive(-1_f64).is_nan());
     assert_eq!(stft::log10_positive(0.), 0.);
     assert_eq!(stft::log10_positive(1.), 0.);
     assert_eq!(stft::log10_positive(10.), 1.);
